@@ -58,9 +58,9 @@ public class SimplexSolver
 				// Add artificial variable
 				for (int ri = 0; ri < standardA.Count; ri++)
 				{
-				    var row = standardA[ri];
-				    Array.Resize(ref row, row.Length + 1);
-				    standardA[ri] = row;
+				    var rw = standardA[ri];
+				    Array.Resize(ref rw, rw.Length + 1);
+				    standardA[ri] = rw;
 				    standardA[ri][^1] = 0;
 				}
 				standardA[^1][^1] = 1;
