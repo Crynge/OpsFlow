@@ -1,3 +1,4 @@
+using Xunit;
 using OpsFlow.Core.Services.Optimization;
 
 namespace OpsFlow.Tests;
