@@ -1,0 +1,63 @@
+## .NET
+bin/
+obj/
+*.user
+*.suo
+*.sln.docstates
+*.userprefs
+packages/
+*.nupkg
+**/[Rr]elease/
+**/[Dd]ebug/
+
+# Build results
+[Dd]ebug[Rr]elease/
+[Rr]elease[Rr]elease/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio
+.vs/
+*.sln.ide/
+*.VC.db
+*.VC.opendb
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.[Cc]ache
+*~$*
+*~*.tmp
+*.vsix
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Node
+node_modules/
+
+# Env
+.env
+.env.local
+*.env
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Test results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.trx
+*.coverage
