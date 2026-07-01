@@ -31,7 +31,7 @@ switch (command)
         await HandleReport(subcommand, args[2..]);
         break;
     case "serve":
-        await StartApi();
+        Console.WriteLine("Use 'dotnet run --project src/OpsFlow.Api' to start the API");
         break;
     case "help":
     default:
@@ -123,13 +123,6 @@ async Task HandleReport(string cmd, string[] tail)
 
     var json = await reporter.ExportToJson(type, planId);
     Console.WriteLine(json);
-}
-
-async Task StartApi()
-{
-    Console.WriteLine("Starting OpsFlow API...");
-    var api = OpsFlow.Api.Program.Main(new[] { "--urls", "http://localhost:5000" });
-    await api;
 }
 
 static void PrintHelp()

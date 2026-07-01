@@ -7,7 +7,6 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\OpsFlow.Core\OpsFlow.Core.csproj" />
-    <ProjectReference Include="..\OpsFlow.Api\OpsFlow.Api.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
