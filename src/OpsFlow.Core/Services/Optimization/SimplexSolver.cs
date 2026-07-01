@@ -55,13 +55,15 @@ public class SimplexSolver
                 standardB.Add(b[i]);
                 standardC.Add(0);
 
-                // Add artificial variable
-                foreach (var r in standardA)
-                {
-                    Array.Resize(ref r, r.Length + 1);
-                    r[^1] = 0;
-                }
-                standardA[^1][^1] = 1;
+				// Add artificial variable
+				for (int ri = 0; ri < standardA.Count; ri++)
+				{
+				    var row = standardA[ri];
+				    Array.Resize(ref row, row.Length + 1);
+				    standardA[ri] = row;
+				    standardA[ri][^1] = 0;
+				}
+				standardA[^1][^1] = 1;
                 standardB[^1] = Math.Abs(standardB[^1]);
                 standardC.Add(-1000000); // Big M penalty
                 artificialCount++;
